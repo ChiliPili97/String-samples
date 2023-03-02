@@ -15,12 +15,7 @@ public class Main {
     }
 
     public static int findWordPosition(String sourse, String target){
-        if (sourse.indexOf(target) == 0){
-            return -1;
-        }
-        else{
-            return sourse.indexOf(target);
-        }
+        return sourse.indexOf(target);
     }
 
     public static String stringReverse(String sourse){
@@ -28,12 +23,7 @@ public class Main {
     }
 
     public static boolean isPalindrome(String sourse){
-        if (sourse.equals(new StringBuilder(sourse).reverse().toString())){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (sourse.equals(new StringBuilder(sourse).reverse().toString()));
     }
 
     public static void quiz(){
